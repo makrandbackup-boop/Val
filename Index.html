@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Valentine’s Day ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: white;
+      text-align: center;
+    }
+    .container {
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 25px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .heart {
+      font-size: 3em;
+      animation: beat 1s infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #ff4d6d;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ffe6ec;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Happy Valentine’s Day 💖</h1>
+    <h2>To the girl who makes my world brighter</h2>
+
+    <div class="card">
+      <div class="heart">❤️</div>
+      <p>
+        Hey love,<br><br>
+        I may not always say it perfectly, but every day I’m grateful for you.
+        Your smile, your patience, and the way you understand me mean more than you know.
+        <br><br>
+        This little website is just a small way of saying —
+        <strong>I choose you. Always.</strong>
+      </p>
+
+      <button onclick="showLove()">Click for a surprise 💌</button>
+
+      <p id="message" style="display:none; margin-top:20px;">
+        Will you be my Valentine today, tomorrow, and forever? 🌹
+      </p>
+    </div>
+
+    <footer>
+      Made with ❤️ by Makrand
+    </footer>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
